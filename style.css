@@ -32,7 +32,7 @@ main {
 ul {
     list-style-type: none;
         color: white;
-        font-weight: 400;
+            font-weight: 400;
         text-decoration: none; 
 }
 small {
@@ -79,7 +79,6 @@ li{
 
     width: 1000px;
     }
-     
-     /*.row{
-        grid-colum-template 500px auto;
-    }
+.bold {
+  font-weight:bold;
+}   
