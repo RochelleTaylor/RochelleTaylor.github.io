@@ -1,0 +1,144 @@
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+aside,
+footer,
+header
+{
+   padding: 17px;
+}
+footer {
+   grid-column: 1 / -1;
+}
+header {
+   grid-column: 1 / -1;
+}
+nav {
+   padding: 5px;
+}
+
+header{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+ul {list-style-type: none;
+   margin: 0;
+   padding: 0;
+   overflow: hidden;
+   background-color: #333;
+}
+li{
+   margin: 1%;
+   float: left;
+}
+nav ul li {
+   margin: 0px 50px;
+   }
+nav ul li{
+   display: block;
+   color: white;
+   text-align: center;
+   padding: 14px 16 px;
+   text-decoration: none;
+
+
+}
+/*.column {
+   display: grid;
+   
+}
+/*.id{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-row: 
+    width: 75%;
+    float: center;
+    padding: 10px;
+    border: 1px solid red;
+
+}*/
+/*.main {
+    width: 75%;
+    float: right;
+    padding: 15px;
+    border: 1px solid red;
+}*/
+.headImage{
+   width: 20%;
+   height: auto;
+}
+/*.container {
+    display: grid;
+    grid-gap: 15px 20px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 100px 200px;
+    margin: 2rem auto;
+    width: 1000px;
+}*/
+.container{
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: center;
+   margin: 2rem auto;
+   padding: 11px;
+   max-width: 1000px;
+
+}
+.flexItem {
+   margin-left: 5px;
+   padding: 11px;
+}
+  /*display: grid;
+   grid-template-columns: 600px 500px;
+   grid-template-rows: 100px 200px 200px 100px
+   margin: 2rem auto 2rem auto;
+   width: 1000px;
+   min-height: 10vh;
+}
+*/
+
+.nav{
+   width: 100%;
+}
+.nav ul{
+   display: flex;
+   flex-direction: row;
+   align-items: flex-start;
+   justify-content: flex-left;
+   width: 100%;
+
+}
+.grid-item-1 {
+    grid-column: 1 / span 2;
+}
+}
+/*.grid-item-me{
+   display: flex;
+   flex-direction: row;
+   align-items: flex-start;
+   justify-content: flex-left;
+
+}*/
+
+.headImage{
+  min-height: 20px;
+
+}
+/*.accounts ul{
+   display: block;
+   color: white;
+   text-align: center;
+   padding: 14px 16 px;
+   text-decoration: none;
+}*/
+
+.footer{
+  
+  
+}
+
+

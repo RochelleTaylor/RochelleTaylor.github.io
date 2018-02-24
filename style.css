@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+
+* {
+    font: 400 14px 'Roboto';
+}
+aside {
+}
+footer {
+    background-color: darkgray;
+   
+}
+h1 {
+    color: black;
+    font-size: 3rem;
+}
+header {
+    background-color: lightgray;
+  
+}
+main {
+
+    background-color: lightsalmon;
+    
+}
+
+  .nav {
+        color: white;
+        font-weight: 700;
+        text-decoration: none;
+    }
+/*ol,
+ul {
+    list-style-type: none;
+        color: white;
+        font-weight: 700;
+        text-decoration: none; 
+}*/
+small {
+    font-size: .8rem;
+}
+.nav{
+        color: black;
+        font-weight: 700;
+        text-decoration: none;
+
+}
+li a:hover{
+    background-color: #111;
+}
+ ul li a{
+    color: white;
+    text-decoration: none;
+}
+ul{
+    color:black;   
+}
+li{
+    color: white;
+}
+
+    }
+.logo {
+    font-size: 24px;
+    text-decoration: none;
+}
+.accounts {
+    border-radius: 5px;
+    border: 1px purple;
+}
+    .accounts {
+        font-weight: 700;
+        text-decoration: none;
+        
+    }
+    .row{
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: -1
+
+    width: 1000px;
+    }
+     
+     /*.row{
+        grid-colum-template 500px auto;
+    }
