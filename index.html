@@ -1,16 +1,17 @@
  <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>About Me</title>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>About Me</title>
 
-        <link rel="stylesheet" href="./layout.css">
-        <link rel="stylesheet" href="./style.css">
-    </head>
-    <body>
-            <div class="nav">
+    <link rel="stylesheet" href="./layout.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="nav">
             <ul class="nav">
                 <li><a href="#about-me">About</a></li>
                 <li><a href="#tech-skills">Skills</a></li>
@@ -20,70 +21,90 @@
                 <li><a href="#links">Links</a></li>
             </ul>
         </div>
-            <header>
-                <h1>Rochelles Autobiography</h1>
-            </header>
-            <main>
-                <div>
-                     <div class="container">
-                    <h1 id="about-me" class="flexItem flexItem--1">About Me</h1>
-                    <p>Apprentice in an accelerated Software Development program learning full stack development with an emphasis in Java and CSS. I transitioned from healthcare into tech to further my growth and expand my knowledge. In my free time I enjoy working on creating apps, building websites and being creative while earning my certificate to become a Software Developer.  </p>
+        <header>
+            <h1>Rochelles Autobiography</h1>
+        </header>
+        <main>
+            <div>
+                <h1 id="about-me" class="flexItem flexItem--1">About Me</h1>
+                <p>Apprentice in an accelerated Software Development program learning full stack development with an emphasis in Java and CSS. I transitioned from healthcare into tech to further my growth and expand my knowledge. In my free time I enjoy working on creating apps, building websites and being creative while earning my certificate to become a Software Developer.  </p>
                 
-                </div>
-                            <img class="headImage" src="images/MyPic.png" alt="headImage">
+            </div>
+            <img class="headImage" src="images/MyPic.png" alt="headImage">
             
-                <h2 id="tech-skills" class="flexItem flexItem--2">Tech Skills</h2>
-                <div class="techskills">
-                    <ul>
-                        Java*
-                        Spring*
-                        TDD Testing*
-                        JavaScript*
-                        jQuery*
-                        HTML5*
-                        CSS3*
-                        Paired Programming*
-                        MVC*
-                        Structured Query Language*
-                        Object Oriented Programming*
-                        Git
-                    </ul>
-                    </div>
-                    <section>
-                        <h2 id="bio">Bio</h2>
-                        
-                        <p>I was born in Marysville Ohio, Januray 24th. I lived in a small town called West-Liberty until the age of 13. My mother moved my brother and I to Columbus to better our education and give us more opportunites. After Highschool, I attended Columbus State to continue my education in healthcare. After a couple years I decided to transfer into tech and pursue my interest in Software Development. I am a dog mom of a Shiba Inu named Rosco who brings me so much joy. I enjoy cooking, reading,traveling, playing board games and listening to music. I am so excited where my life is headed and transforming into the tech industry. I cant wait to see what the future holds!</p>
-                    </section>
-                    <section>
-                        <h1>Contact Info</h1>
-                        <p>Cell: 614-625-7811
-                           Email: RochelleTaylor614@gmail.com</p>
-                    </section>
-                    <main>
-                    <section>
-                    <h1 id="projects">My Projects</h1>
-                </section>
-                    <article>
-                        <span class="bold">Fortune Teller</span>
-                        <p>Developed a console application that will tell the user’s fortune based on data received from the user.</p>
-                    </article>
-                     <article>
-                        <span class="bold">Virtual Pet</span>
-                        <p>Created a virtual pet application of a DigiPet. Giving the pet different behaviors to interact with the user. The pets health, boredom, waste, hunger and thirst would go either up or down based off the user input. </p>
-                    </article>
-                    <article>
-                        <span class="bold">Virtual Pet Shelter</span>
-                        <p>Created an application that simulates user taking care of pets in a shelter. Asking user information about the pets in the shelter and calling on the appropriate methods in the pet shelter and virtual pet to reflect the behavior status of virtual pet. </p>
-                    </article>
-                    <h2 id="links">My Links</h2>
-            <ul>
-                <li><a href="https://github.com/RochelleTaylor" class="social github">Github</a></li>
-                <li><a href="https://www.linkedin.com/in/rochelletaylor-614/" class="social linkedIn">LinkedIn</a></li>
-            </ul>
+            <h2 id="tech-skills" class="flexItem flexItem--2">Tech Skills</h2>
+            <div class="techskills">
+                <ul>
+                    Java*
+                    Spring*
+                    TDD Testing*
+                    JavaScript*
+                    jQuery*
+                    HTML5*
+                    CSS3*
+                    Paired Programming*
+                    MVC*
+                    Structured Query Language*
+                    Object Oriented Programming*
+                    Git
+                </ul>
+            </div>
+            <section>
 
-            <footer>
+                <h2 id="bio" class="flexItem flexItem--2">About Me</h2>
+                <button class="collapsible">Open Collapsible</button>
+                <div class="content"></div>
+                <p>I was born in Marysville Ohio, Januray 24th. I lived in a small town called West-Liberty until the age of 13. My mother moved my brother and I to Columbus to better our education and give us more opportunites. After Highschool, I attended Columbus State to continue my education in healthcare. After a couple years I decided to transfer into tech and pursue my interest in Software Development. I am a dog mom of a Shiba Inu named Rosco who brings me so much joy. I enjoy cooking, reading,traveling, playing board games and listening to music. I am so excited where my life is headed and transforming into the tech industry. I cant wait to see what the future holds!</p>
+            </section>
+            <section>
+                <h2>Contact Info</h2>
+                <p>Cell: 614-625-7811
+                 Email: RochelleTaylor614@gmail.com</p>
+             </section>
+             <section class ="projects">
+                <section class ="projects-title">
+                    <h2 id="projects-title-text">My Projects</h2>
+                </section>
+                <article class="project">
+                    <h3 class = "project-title">Fortune Teller</h3>
+                    <p class= "project-description">Developed a console application that will tell the user’s fortune based on data received from the user.</p>
+                    <ul class = "projectskills-list">
+                        <h4>Skills Used</h4>
+                        <li class="project-skill">Java</li>
+                        <li class="project-skill">Eclipse IDE</li>
+                        <li class="project-skill">Conditional Statements</li>
+                    </ul>
+                </article>
+                <article class="project">
+                    <h3 class = "project-title">Virtual Pet</h3>
+                    <p class = "project-description">Created a virtual pet application of a DigiPet. Giving the pet different behaviors to interact with the user. The pets health, boredom, waste, hunger and thirst would go either up or down based off the user input. </p>
+                    <ul class = "projectskills-list">
+                    <h4>Skills Used</h4>
+                        <li class="project-skill">Java</li>
+                        <li class="project-skill">Eclipse IDE</li>
+                        <li class="project-skill">Conditional Statements</li>
+                        </ul>
+                </article>
+                <article class="project">
+                    <h3 class = "project-title">Virtual Pet Shelter</h3>
+                    <p class = "project-description">Created an application that simulates user taking care of pets in a shelter. Asking user information about the pets in the shelter and calling on the appropriate methods in the pet shelter and virtual pet to reflect the behavior status of virtual pet. </p>
+                    <ul class = "projectskills-list">
+                    <h4>Skills Used</h4>
+                        <li class="project-skill">Java</li>
+                        <li class="project-skill">Eclipse IDE</li>
+                        <li class="project-skill">Conditional Statements</li>
+                        </ul>
+                </article>
+            </section>
+                <h2 id="links">My Links</h2>
+                <ul>
+                    <li><a href="https://github.com/RochelleTaylor" class="social github">Github</a></li>
+                    <li><a href="https://www.linkedin.com/in/rochelletaylor-614/" class="social linkedIn">LinkedIn</a></li>
+                </ul>
+
+                <footer>
                     <span class= "copyright">2018 Rochelles Autobiography</span>
-         </footer>
-        </div>
-    </body>
-    </html>
+                </footer>
+            </div>
+        </body>
+        </html>

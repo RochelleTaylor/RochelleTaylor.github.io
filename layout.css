@@ -1,6 +1,6 @@
 * {
    box-sizing: border-box;
-   margin: 0;
+   margin: 10;
    padding: 0;
 }
 aside,
@@ -29,7 +29,7 @@ ul {list-style-type: none;
    margin: 0;
    padding: 0;
    overflow: hidden;
-   background-color: #333;
+   
 }
 li{
    margin: 1%;
@@ -40,7 +40,7 @@ nav ul li {
    }
 nav ul li{
    display: block;
-   color: white;
+   color: black;
    text-align: center;
    padding: 14px 16 px;
    text-decoration: none;
@@ -58,13 +58,17 @@ nav ul li{
 
 .container{
 
-   display: flex;
-   flex-direction: row;
-   flex-wrap: wrap;
-   justify-content: center;
-   margin: 2rem auto;
-   padding: 11px;
-   max-width: 800px;
+   display: grid;
+   grid-gap:50px;
+   margin: 0px;
+   width: 100%;
+}
+.me{
+   margin-top:20px;
+   max-width: 100%;
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+}
 
 }
 .flexItem {
@@ -75,13 +79,30 @@ nav ul li{
    margin: 2rem auto;
    padding: 11px;
 }
-.container{
-   
+.projects{
    display: grid;
-    margin: 2rem auto 2rem auto;
-    width: 1000px;
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-gap: 10px;
+}
+.projects-title{
+   grid-column: 1/-1;
+   display:flex;
+   justify-content: center;
+
 }
 
+.project-title{
+   display: grid;
+   margin: 0px;
+   width: 100%;
+}
+.project-description{
+   
+}
+/*ul.project-skills-list{
+  display: grid;
+  grid-template-rows: center;
+}*/
 
 .nav{
    width: 100%;
