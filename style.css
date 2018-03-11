@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
 
 * {
+    /*box-sizing: border-box;*/
     font-family: 'Roboto';
 }
 aside {
@@ -17,7 +18,30 @@ header {
     background-color: lightgray;
   
 }
-main {}
+/*main {
+    max-width: 1000px;
+    margin: auto;
+}*/
+.row {
+    margin: 8px -16px;
+}
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+    padding: 8px;
+}
+/* Create four equal columns that floats next to each other 
+.column {
+    float: left;
+    width: 25%;
+}*/
+
+ Clear floats after rows  
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
 
 .hidden {
     display:none;
@@ -81,7 +105,7 @@ li{
 .bold {
   font-weight:bold;
 } 
-.collapsible {
+/*.collapsible {
     background-color: #777;
     color: white;
     cursor: pointer;
@@ -91,7 +115,7 @@ li{
     text-align: left;
     outline: none;
     font-size: 15px;
-}    
+}*/    
 /* The Modal (background) */
 .modal {
     display: none; /* Hidden by default */
@@ -129,53 +153,49 @@ li{
     text-decoration: none;
     cursor: pointer;
 }
-div.gallery {
-    margin: 5px;
-    border: 1px solid #ccc;
-    float: left;
-    width: 180px;
-}
-
-div.gallery:hover {
-    border: 1px solid #777;
-}
 
 div.gallery img {
-    width: 100%;
-    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 150px;
+}
+div.gallery img:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
 }
 
-body{
-    background: url("images/flower.jpg");
-
-     background-repeat: no-repeat;
-    background-attachment: scroll;
-}
-img {
-    display: block;
-    margin-left: 25%;
-    margin-right: auto;
-
-}
 div.background {
-  background: url("images/flower.jpg") repeat;
-  border: 2px solid black;
+  background: url("images/mountain.png");
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%
 }
 
 div.transbox {
   margin: 30px;
   background-color: #ffffff;
-  border: 1px solid black;
-  opacity: 0.6;
+/*  border: 1px solid black;
+*/  opacity: 0.6;
   filter: alpha(opacity=60); 
 }
 
-div.transbox p {
-  margin: 5%;
-  font-weight: bold;
-  color: #000000;
+.img-circle {
+    border-radius: 80%;
+    vertical-align: middle;
+    width: 200px;
+    height: 200px;
+
 }
-/*.button-container{
-    width:150px;
+img {
+    display: block;
+    margin-left: 30%;
+    margin-right: auto;
+
 }
-*/
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}

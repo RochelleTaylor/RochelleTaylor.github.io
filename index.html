@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./style.css">
 </head>
         <body>
+        <section>
             <ul class="nav">
                 <li class="menu-button"><button>Menu</button></li>
                 <li class="hidden"><a href="#about-me">About</a></li>
@@ -19,30 +20,31 @@
                 <li class="hidden"><a href="#projects">Projects</a></li>
                 <li class="hidden"><a href="#links">Links</a></li>
             </ul>
-        </div>
-        <div>
-               <img src="images/MyPic.png" alt="headImage" style="30%">
-<!--                 <img src="images/MyPic.png" height="300px" width="400px">
- -->           
-        </div>
-
-         
-        <main>
+        </section>
+         <section>
+                <h2 id="contact"></h2>
+                <button class="contact-info-button">Contact Info</button>
+                <div class="transbox">
+                <p class="hidden" id="contact-info-description">Cell: 614-625-7811
+                 Email: RochelleTaylor614@gmail.com</p>
+             </section>
+        <section>
         <button id="myBtn">About Me</button>
-        <div>
         <div id="myModal" class="modal">
             <div class="modal-content">
              <button class="modal-content-button"></button><span class="close">&times;</span>
             <p>Apprentice in an accelerated Software Development program learning full stack development with an emphasis in Java, JavaScript and CSS. I transitioned from healthcare into tech to further my growth and expand my knowledge. In my free time I enjoy working on creating apps, building websites and being creative while earning my certificate to become a Software Developer.</p>
         </div>
-            </div>
-           <!--  <img class="headImage" src="images/MyPic.png" alt="headImage"> -->
-            
-            <div class="tab">
-            <!-- <button class="tablinks" onclick="openSkills(event, 'techskills')">Tech-Skills</button>
-            <div id="techskills" class="tabcontent"> -->
-             <div class="background">
-                 <div class="transbox">
+            </section>
+          <section>
+                <h2 id = "bio"></h2>
+                <button class="about-me-button">Bio</button>
+               <div class="transbox">
+                <p class="hidden" id="about-me-description">I was born in Marysville Ohio, Januray 24th. I lived in a small town called West-Liberty until the age of 13. My mother moved my brother and I to Columbus to better our education and give us more opportunites. After Highschool, I attended Columbus State to continue my education in healthcare. After a couple years I decided to transfer into tech and pursue my interest in Software Development. I am a dog mom of a Shiba Inu named Rosco who brings me so much joy. I enjoy cooking, reading,traveling, playing board games and listening to music. I am so excited where my life is headed and transforming into the tech industry. I cant wait to see what the future holds!</p>
+            </section>
+            <main>
+            <div class="background">
+            <div class="transbox">
             <h3>TechSkills</h3>
                 <ul>
                    <li>Java</li> 
@@ -59,20 +61,6 @@
                     <li>Git</li>
                 </ul>
             </div>
-            <section>
-                <h2>About Me</h2>
-                <div class="button-container"></div>
-                <a href = "#" class = "about-me-button" value ="Description"</button></a>
-                <div class="transbox">
-                <p class="hidden" id="about-me-description">I was born in Marysville Ohio, Januray 24th. I lived in a small town called West-Liberty until the age of 13. My mother moved my brother and I to Columbus to better our education and give us more opportunites. After Highschool, I attended Columbus State to continue my education in healthcare. After a couple years I decided to transfer into tech and pursue my interest in Software Development. I am a dog mom of a Shiba Inu named Rosco who brings me so much joy. I enjoy cooking, reading,traveling, playing board games and listening to music. I am so excited where my life is headed and transforming into the tech industry. I cant wait to see what the future holds!</p>
-            </section>
-            <section>
-                <h2 id="contact">Contact Me</h2>
-                <button class="contact-info-button">Contact Info</button>
-                <div class="transbox">
-                <p class="hidden" id="contact-info-description">Cell: 614-625-7811
-                 Email: RochelleTaylor614@gmail.com</p>
-             </section>
              <section id="projects" class ="projects">
                 <section class ="projects-title">
                     <h2 id="projects-title-text">My Projects</h2>
@@ -92,7 +80,7 @@
                     </div>
                     <div class="gallery">
                     <a target="_blank" href="images/Fortune-Teller-ScreenShot.png">
-                    <img src="images/Fortune-Teller-ScreenShot.png" alt="screenShot" width="600" height="400"></a>
+                    <img src="images/Fortune-Teller-ScreenShot.png" alt = "screenShot" width= "600" height="150"></a>
                 </article>
                 <article class="project">
                 <div class="transbox">
@@ -109,7 +97,7 @@
                         </div>
                         <div class="gallery">
                         <a target="_blank" href="images/virtual-pet.png">
-                        <img src="images/virtual-pet.png" alt="screenShot" width="600" height="400"></a>
+                        <img src="images/virtual-pet.png" alt="screenShot" width="600" height="150"></a>
                 </article>
                 <article class="project">
                 <div class="transbox">
@@ -126,7 +114,7 @@
                     </div>  
                     <div class="gallery">
                     <a target="_blank" href="images/pet-shelter.png">
-                    <img src="images/pet-shelter.png" alt="screenShot" width="800" height="600"></a>
+                    <img src="images/pet-shelter.png" alt="screenShot" width="600" height="150"></a>
                 </article>
             </section>
                 <h2 id="links">My Links</h2>
