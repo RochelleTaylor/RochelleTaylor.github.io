@@ -199,3 +199,68 @@ img {
     margin-right: auto;
     width: 50%;
 }
+.wrapper {
+    text-align: center;
+}
+
+.menu-button {
+    position: top;
+    top: 50%;
+}
+contact-info-button {
+    display: block;
+    float: left;
+    height: 50px;
+    width: 100px;
+    margin-right: 5px;
+/*    background-image: url(./images/button_left.png);
+*/    background-color: #ccc;
+    text-align: center;
+    line-height: 50px;
+    text-decoration: none;
+}
+
+img {
+    display: grid;
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+    border-radius: 80%;
+    vertical-align: middle;
+    width: 200px;
+    height: 200px;
+}
+.menu-button{
+     display: block;
+    float: left;
+    height: 50px;
+    width: 100px;
+    margin-right: 5px;
+/*    background-image: url(./images/button_left.png);
+*/    background-color: #ccc;
+    text-align: center;
+    line-height: 50px;
+    text-decoration: none;
+}
+/*.contact-info-button{
+     display: block;
+    float: center;
+    height: 100px;
+    width: 100px;
+    margin-right: 5px;
+    background-image: url(./images/button_left.png);
+    background-color: #ccc;
+    text-align: center;
+    line-height: 50px;
+    text-decoration: none;
+}*/
+
+
+li a:hover {
+    background-color: #111;
+}
+
+.active {
+    background-color: red;
+}
