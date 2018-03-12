@@ -128,23 +128,15 @@ nav ul li{
 }
 
 
-/*.headImage{
+.headImage{
   min-height: 20px;
   
 
-}*/
-.img-circle{
-   min-height: 20px;
 }
+
 
 
 .footer{
-   display: flex;
-   flex-direction: column;
-   justify-content: space-between;
-}
-  
-.bold2{
    display: flex;
    flex-direction: column;
    justify-content: space-between;
