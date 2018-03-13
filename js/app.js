@@ -67,14 +67,51 @@ btn.onclick = function() {
 }
 
 // When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-    modal.style.display = "none";
-}
+// span.onclick = function() {
+    // modal.style.display = "none";
+// }
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
     if (event.target == modal) {
         modal.style.display = "none";
     }
-}
+};
+function carouselShift(carouselItemList, directionButton){
+	if(directionButton.className.includes('right-button')){
+		// carouselItemList.forEach(function(carouselItem){
+		for (let carouselItem of carouselItemList){	
+			if (carouselItem.className.includes('left-edge')){
+				carouselItem.className = carouselItem.className.replace('left-edge', 'left-focus');
+				break;
+			} else if(carouselItem.className.includes('left-focus')){
+				carouselItem.className= carouselItem.className.replace('left-focus','center-focus');
+			} else if(carouselItem.className.includes('center-focus')){
+				carouselItem.className= carouselItem.className.replace('center-focus','right-focus');
+			} else if(carouselItem.className.includes('right-focus')){
+				carouselItem.className = carouselItem.className.replace('right-focus','right-edge');
+			}
+		}
+	}else if(directionButton.className.includes('left-button')){
+		//carouselItemList.forEach(function(carouselItem){
+		for (let i=carouselItemList.length-1; i>=0; i--){	
+			if(carouselItemList[i].className.includes('right-edge')){
+				carouselItemList[i].className = carouselItemList[i].className.replace('right-edge','right-focus');
+				break;
+			} else if(carouselItemList[i].className.includes('right-focus')){
+				carouselItemList[i].className = carouselItemList[i].className.replace('right-focus','center-focus');
+			} else if(carouselItemList[i].className.includes('center-focus')){
+				carouselItemList[i].className = carouselItemList[i].className.replace('center-focus','left-focus');
+			} else if(carouselItemList[i].className.includes('left-focus')){
+				carouselItemList[i].className = carouselItemList[i].className.replace('left-focus', 'left-edge');
+			}
+		}
+	};
+};	
+document.querySelector('.left-carousel-nav .left-button').addEventListener("click", function(){
+  carouselShift(document.querySelectorAll('.image-carousel .carousel-item'),document.querySelector('.left-carousel-nav .left-button'));
+});
+document.querySelector('.right-carousel-nav .right-button').addEventListener("click", function(){
+  carouselShift(document.querySelectorAll('.image-carousel .carousel-item'),document.querySelector('.right-carousel-nav .right-button'));
+});
 
