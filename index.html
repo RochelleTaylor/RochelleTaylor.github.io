@@ -10,13 +10,14 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+<div class="background">
     <section>
         <ul class="nav">
             <div class = "wrapper">
                 <li class="menu-button"><button>Menu</button></li>
                 <li class="contact-info-button"><button>Contact Info</button></li>
                 <li class="myBtn"><button>About Me</button></li>
-                <li class="about-me-button">Bio</button></li>
+                <li class="about-me-button"><button>Bio</button></li>
                 <li class="hidden"><a href="#tech-skills">Skills</a></li>
                 <li class="hidden"><a href="#bio">Bio</a></li>
                 <li class="hidden"><a href="#contact">Contact</a></li>
@@ -45,20 +46,18 @@
         </div>
     </section>
     <section>
-        <h2 id = "about-me-button"></h2>
-        <div class="transbox">
-            <button class="about-me-description"></button>
-            <span class = "hidden">
-                <p>about-me-description">I was born in Marysville Ohio, Januray 24th. I lived in a small town called West-Liberty until the age of 13. My mother moved my brother and I to Columbus to better our education and give us more opportunites. After Highschool, I attended Columbus State to continue my education in healthcare. After a couple years I decided to transfer into tech and pursue my interest in Software Development. I am a dog mom of a Shiba Inu named Rosco who brings me so much joy. I enjoy cooking, reading,traveling, playing board games and listening to music. I am so excited where my life is headed and transforming into the tech industry. I cant wait to see what the future holds!</p>
-            </span>
+        <div class ="wrapper">
+            <div class="transbox">
+                <p class= "hidden"  id="about-me-info">
+                about-me-description">I was born in Marysville Ohio, Januray 24th. I lived in a small town called West-Liberty until the age of 13. My mother moved my brother and I to Columbus to better our education and give us more opportunites. After Highschool, I attended Columbus State to continue my education in healthcare. After a couple years I decided to transfer into tech and pursue my interest in Software Development. I am a dog mom of a Shiba Inu named Rosco who brings me so much joy. I enjoy cooking, reading,traveling, playing board games and listening to music. I am so excited where my life is headed and transforming into the tech industry. I cant wait to see what the future holds!</p>
+         </div>
         </div>
     </section>
     <main>
-        <div class="background">
-            <div class="transbox">
-                <h3>TechSkills</h3>
-                <ul>
-                    <li>Java</li> 
+        <h3>TechSkills</h3>
+        <ul>
+            <li>
+                <b>Java</li> 
                     <li>Spring</li>
                     <li>TDD Testing</li>
                     <li>JavaScript</li>
@@ -70,9 +69,9 @@
                     <li>Structured Query Language</li>
                     <li>Object Oriented Programming</li>
                     <li>Git</li>
+                </b>
                 </ul>
-            </div>
-            <section id="projects" class ="projects">
+        <section id="projects" class ="projects">
                 <section class ="projects-title">
                     <h2 id="projects-title-text">My Projects</h2>
                 </section>

@@ -180,19 +180,19 @@ div.transbox {
   filter: alpha(opacity=60); 
 }
 
-.img-circle {
+/*.img-circle {
     border-radius: 80%;
     vertical-align: middle;
     width: 200px;
     height: 200px;
 
-}
-img {
+}*/
+/*img {
     display: block;
-    margin-left: 30%;
+    margin-left: 10%;
     margin-right: auto;
 
-}
+}*/
 .center {
     display: block;
     margin-left: auto;
@@ -220,11 +220,12 @@ contact-info-button {
     text-decoration: none;
 }
 
+
 img {
     display: grid;
     margin: 5px;
     border: 1px solid #ccc;
-    float: left;
+    float: right;
     width: 180px;
     border-radius: 80%;
     vertical-align: middle;
@@ -243,18 +244,42 @@ img {
     line-height: 50px;
     text-decoration: none;
 }
-/*.contact-info-button{
-     display: block;
-    float: center;
-    height: 100px;
+.contact-info-button{
+    display: block;
+    float: left;
+    height: 50px;
     width: 100px;
     margin-right: 5px;
-    background-image: url(./images/button_left.png);
-    background-color: #ccc;
+/*    background-image: url(./images/button_left.png);
+*/    background-color: #ccc;
     text-align: center;
     line-height: 50px;
     text-decoration: none;
-}*/
+}
+.myBtn{
+    display: block;
+    float: left;
+    height: 50px;
+    width: 100px;
+    margin-right: 5px;
+/*    background-image: url(./images/button_left.png);
+*/    background-color: #ccc;
+    text-align: center;
+    line-height: 50px;
+    text-decoration: none;
+}
+.about-me-button{
+    display: block;
+    float: left;
+    height: 50px;
+    width: 100px;
+    margin-right: 5px;
+/*    background-image: url(./images/button_left.png);
+*/    background-color: #ccc;
+    text-align: center;
+    line-height: 50px;
+    text-decoration: none;  
+}
 
 
 li a:hover {
