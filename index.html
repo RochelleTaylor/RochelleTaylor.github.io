@@ -10,57 +10,58 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-<div class="background">
-    <section>
-        <ul class="nav">
-            <div class = "wrapper">
-                <li class="menu-button"><button>Menu</button></li>
-                <li class="contact-info-button"><button>Contact Info</button></li>
-                <li class="myBtn"><button>About Me</button></li>
-                <li class="about-me-button"><button>Bio</button></li>
-                <li class="hidden"><a href="#tech-skills">Skills</a></li>
-                <li class="hidden"><a href="#bio">Bio</a></li>
-                <li class="hidden"><a href="#contact">Contact</a></li>
-                <li class="hidden"><a href="#projects">Projects</a></li>
-                <li class="hidden"><a href="#links">Links</a></li>
-            </div>
-        </ul>
-        <img src="images/rosco.png" alt="rosco" width="200" height="100">
-        <img src="images/MyPic3.jpg" alt="pic3" width="200" height="100">
-    </section>
-    <section>
-        <div class="wrapper">
-            <div class="transbox">
+    <div class="background">
+        <section>
+            <ul class="nav">
+                <div class = "wrapper">
+                    <li class="menu-button"><button>Menu</button></li>
+                    <li class="contact-info-button"><button>Contact Info</button></li>
+                    <li class="myBtn"><button id="myBtn">About Me</button></li>
+                    <li class="about-me-button"><button>Bio</button></li>
+                    <li class="hidden"><a href="#tech-skills">Skills</a></li>
+                    <li class="hidden"><a href="#bio">Bio</a></li>
+                    <li class="hidden"><a href="#contact">Contact</a></li>
+                    <li class="hidden"><a href="#projects">Projects</a></li>
+                    <li class="hidden"><a href="#links">Links</a></li>
+                </div>
+            </ul>
+            <img src="images/rosco.png" alt="rosco" width="200" height="100">
+            <img src="images/MyPic3.jpg" alt="pic3" width="200" height="100">
+        </section>
+        <section>
+            <div class="wrapper">
+                <div class="transbox">
                     <section id="contact" class ="contact-info-description">
-                <p class="hidden" id="contact-info-description">
-                Cell: 614-625-7811
-                Email: RochelleTaylor614@gmail.com</p>
-                
+                        <p class="hidden" id="contact-info-description">
+                            Cell: 614-625-7811
+                        Email: RochelleTaylor614@gmail.com</p>
+                    </section>   
+                </div>
             </div>
-        </div>
-    </section>
-    <section>
-        <div id="myModal" class="modal">
-            <div class="modal-content">
-                <button class="modal-content-button"></button>
-                <button id="myBtn">About Me</button>      
-                <p>Apprentice in an accelerated Software Development program learning full stack development with an emphasis in Java, JavaScript and CSS. I transitioned from healthcare into tech to further my growth and expand my knowledge. In my free time I enjoy working on creating apps, building websites and being creative while earning my certificate to become a Software Developer.</p>
+        </section>
+        <section>
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <button class="modal-content-button"></button>
+                    <button id="myBtn">About Me</button>      
+                    <p>Apprentice in an accelerated Software Development program learning full stack development with an emphasis in Java, JavaScript and CSS. I transitioned from healthcare into tech to further my growth and expand my knowledge. In my free time I enjoy working on creating apps, building websites and being creative while earning my certificate to become a Software Developer.</p>
+                </div>
             </div>
-        </div>
-    </section>
-    <section>
-        <div class ="wrapper">
-            <div class="transbox">
-                <p class= "hidden"  id="about-me-info">
-                about-me-description">I was born in Marysville Ohio, Januray 24th. I lived in a small town called West-Liberty until the age of 13. My mother moved my brother and I to Columbus to better our education and give us more opportunites. After Highschool, I attended Columbus State to continue my education in healthcare. After a couple years I decided to transfer into tech and pursue my interest in Software Development. I am a dog mom of a Shiba Inu named Rosco who brings me so much joy. I enjoy cooking, reading,traveling, playing board games and listening to music. I am so excited where my life is headed and transforming into the tech industry. I cant wait to see what the future holds!</p>
-         </div>
-        </div>
-    </section>
-    <main>
-        <h3>TechSkills</h3>
-        <ul>
-            <li>
-                <b>Java</li> 
+        </section>
+        <section>
+            <div class ="wrapper">
+                <div class="transbox">
+                    <section id= "bio" class="about-me-description">
+                    <p class="hidden" id="about-me-description">
+                        I was born in Marysville Ohio, Januray 24th. I lived in a small town called West-Liberty until the age of 13. My mother moved my brother and I to Columbus to better our education and give us more opportunites. After Highschool, I attended Columbus State to continue my education in healthcare. After a couple years I decided to transfer into tech and pursue my interest in Software Development. I am a dog mom of a Shiba Inu named Rosco who brings me so much joy. I enjoy cooking, reading,traveling, playing board games and listening to music. I am so excited where my life is headed and transforming into the tech industry. I cant wait to see what the future holds!</p>
+                </div>
+            </div>
+        </section>
+        <main>
+            <h3>TechSkills</h3>
+            <ul>
+                <strong>
+                    <li>Java</li> 
                     <li>Spring</li>
                     <li>TDD Testing</li>
                     <li>JavaScript</li>
@@ -72,9 +73,9 @@
                     <li>Structured Query Language</li>
                     <li>Object Oriented Programming</li>
                     <li>Git</li>
-                </b>
-                </ul>
-        <section id="projects" class ="projects">
+                </strong>
+            </ul>
+            <section id="projects" class ="projects">
                 <section class ="projects-title">
                     <h2 id="projects-title-text">My Projects</h2>
                 </section>
@@ -107,7 +108,8 @@
                             <h4>Skills Used</h4>
                             <li class="project-skill">Java</li>
                             <li class="project-skill">Eclipse IDE</li>
-                            <li class="project-skill">Conditional Statements</li>
+                            <li class="project-skill">Arrays</li>
+                             <li class="project-skill">TDD</li>
                         </ul>
                     </div>
                     <div class="gallery">
@@ -126,7 +128,8 @@
                             <h4>Skills Used</h4>
                             <li class="project-skill">Java</li>
                             <li class="project-skill">Eclipse IDE</li>
-                            <li class="project-skill">Conditional Statements</li>
+                            <li class="project-skill">Inheritance & Polymorphism</li>
+                             <li class="project-skill">TDD</li>
                         </ul>
                     </div>  
                     <div class="gallery">
@@ -144,30 +147,30 @@
                 </ul>
             </div>
             <div class="image-carousel">
-    <section class="left-carousel-nav">
-      <button class="left-button">
-        <p>&lt;</p>
-      </button>
-    </section>
-    <section class="carousel-item center-focus">
-      <img src="images/rosco1.png"alt="rosco1">
-    </section>
-    <section class="carousel-item left-focus">
-      <img src="images/rosco2.png" alt="grizzly">
-    </section>
-    <section class="carousel-item left-edge">
-     <img src="images/rosco3.png" alt="rosco" width="200" height="100">
-    </section>
-    <section class="right-carousel-nav">
-      <button class="right-button">
-        <p>&gt;</p>
-      </button>
-    </section>
-  </div>
-            <footer>
-                <span class= "copyright">2018 Rochelles Autobiography</span>
-            </footer>
-            <script src ="js/app.js"></script>
+                <section class="left-carousel-nav">
+                  <button class="left-button">
+                    <p>&lt;</p>
+                </button>
+            </section>
+            <section class="carousel-item center-focus">
+                <img src="images/rosco1.png"alt="rosco1">
+            </section>
+            <section class="carousel-item left-focus">
+                <img src="images/rosco2.png" alt="grizzly">
+            </section>
+            <section class="carousel-item left-edge">
+                <img src="images/rosco3.png" alt="rosco" width="200" height="100">
+            </section>
+            <section class="right-carousel-nav">
+                <button class="right-button">
+                    <p>&gt;</p>
+                </button>
+            </section>
         </div>
-    </body>
+        <footer>
+            <span class= "copyright">2018 Rochelles Autobiography</span>
+        </footer>
+        <script src ="js/app.js"></script>
+    </div>
+</body>
 </html>
